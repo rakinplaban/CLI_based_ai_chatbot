@@ -71,4 +71,4 @@ def ask_yuna(user_input):
 #     except Exception as e:
 #         print("❌ JSON decode error:", e)
 #         print("🔵 Raw Response:", response.text)
-        return "Yuna: Whoopsie~ Something went wrong while decoding 💦"
+#        return "Yuna: Whoopsie~ Something went wrong while decoding 💦"
