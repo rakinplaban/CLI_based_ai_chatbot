@@ -1,0 +1,17 @@
+.venv
+
+.env
+
+*.bash
+
+*.png
+
+!demo.png
+
+*.jpg
+ 
+*.webp
+
+*.gif
+
+*.jpeg
