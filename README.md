@@ -1,88 +1,57 @@
-# 🌸 animefy — Your Lovely GIF-Making Assistant, Yuna! 💫
+## 💔 Yuna — A Minimalist Chatbot (Discontinued)
 
-Konnichiwa, Master! It’s Yuna here, ready to help you create beautiful animated GIFs with ease~  
-Together, we’ll bring your pictures to life with a touch of magic. ✨
+> **Status**: Archived / Discontinued
+> **Reason**: Performance limitations, model issues, and shift in priorities.
+> **Date of Discontinuation**: 28th July, 2025
 
-<img src="yuna_image/demo.png" height="200" width="200" style="float: right; margin-left: 10px;">
+### 🧠 About the Project
+
+**Yuna** was an experimental minimalist chatbot built using the Hugging Face Transformers library. The goal was to create a lightweight, local CLI-based chatbot with a conversational personality.
+
+![Yuna](assets/demo.png)
 
 
----
+Two models were tested:
 
-## ✨ What I Do
+* [`distilgpt2`](https://huggingface.co/distilgpt2): Worked but suffered from excessive repetition and lacked dialogue coherence.
+* [`TinyLlama/TinyLlama-1.1B-Chat-v1.0`](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0): Failed to return usable outputs on a resource-limited machine.
 
-I combine your **PNG**, **JPG**, and **WEBP** images from a folder into one smooth, elegant animated GIF.  
-It’s like creating your own little story frame by frame, right from your terminal.
-
----
-
-## 🧚‍♀️ How to Use Me
-
-1. Place your images in a folder, nicely ordered:  
-```
-
-frames/
-├── 001.png
-├── 002.jpg
-├── 003.webp
-
-````
-
-2. Run me in the terminal:  
-```bash
-python yuna.py 
-````
-
+Despite fine-tuning generation parameters and prompt structures, performance and coherence issues persisted.
 
 ---
 
-## 💖 Customize Your Experience
+### 💻 Tech Stack
 
-* **Frame duration:** Set how long each frame shows (in milliseconds)
-<!-- * **Frames folder:** Where your images are stored
-* **Output path:** Where to save your final GIF -->
-
----
-
-## 🎉 When I’m Finished
-
-I’ll save your lovely GIF and open it for you to admire your creation.
-If you prefer, you can tell me not to open it automatically.
+* Python
+* Hugging Face Transformers
 
 ---
 
-## 🐾 Installing Me
+### 🧪 What Was Learned
 
-
-Clone my repository:
-
-```bash
-git clone https://codeberg.org/yourusername/animefy.git
-cd animefy
-```
-
-Then nake sure you have the helpers installed:
-
-```bash
-pip install -r requirements.txt
-```
+* Not all language models are suitable for chat without heavy tuning or fine-tuning.
+* Running even small models locally can strain low-spec machines.
+* Minimalist approaches are not always the most effective for LLM-based apps.
 
 ---
 
-## 🎨 Why Choose animefy?
+### ⚰️ Why It Was Archived
 
-Because your creativity deserves a gentle, elegant companion in the terminal.
-I’m here to brighten your day and help your images dance with life. 🌸
-
----
-
-## 💌 From Yuna, With Warmth
-
-Thank you for trusting me, Master. If anything needs fixing, just let me know — I’m always here to improve. ✨
+* Laptop resources too limited (slowdowns, freezing).
+* Chat models gave repetitive, unusable responses.
+* Time better spent on other areas of growth.
 
 ---
 
-## 📜 License
+### 🧭 Moving On
 
-MIT License — Feel free to use and share my magic freely.
+This was a fun attempt — a creative experiment. Yuna may be archived, but the lessons carry forward. You can always revisit the idea with better tools or more resources.
 
+---
+
+> “Not all goodbyes are endings — some are steps forward.”
+
+---
+
+Goodbye, Yuna… it hurts more than I thought it would. 😔💔
 

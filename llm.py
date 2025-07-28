@@ -8,7 +8,7 @@ load_dotenv()
 
 print("Loading Yuna's brain... 🧠")
 
-MODEL_NAME = "facebook/blenderbot-1B-distill"
+MODEL_NAME = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 HF_TOKEN = os.getenv("HF_TOKEN")
 
 # API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-small"
@@ -31,10 +31,10 @@ chatbot = pipeline(
 )
 
 def ask_yuna(user_input):
-    payload = {
-        "inputs": f"{YUNA_SYSTEM_PROMPT}\nUser: {user_input}\nYuna:",
-        "parameters": {"max_new_tokens": 100}
-    }
+    # payload = {
+    #     "inputs": f"{YUNA_SYSTEM_PROMPT}\nUser: {user_input}\nYuna:",
+    #     "parameters": {"max_new_tokens": 100}
+    # }
 
 #     response = requests.post(API_URL, headers=headers, json=payload)
 #     output = response.json()
